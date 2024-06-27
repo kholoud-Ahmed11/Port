@@ -1,0 +1,308 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #45adf3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero {
+    position: relative;
+    z-index: 10;
+    height: 85vh;
+    width: 75%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    border: 3px solid #0383d8;
+    border-radius: 20px;
+    box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
+    padding: 0 40px 0 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+
+.logo {
+    color: #034c7c;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: #242424;
+    margin-left: 40px;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #d8dee2;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.div-text {
+    width: 40%;
+}
+
+.div-text h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #fff;
+}
+
+.div-text h4 {
+    color: #034c7c;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.div-text p {
+    color: #4f4f4f;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+.div-text .btn {
+    padding: 15px 20px;
+    background-color: #034c7c;
+    border: 2px solid #034c7c;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.div-text .btn:hover {
+    color: #034c7c;
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+.soc-link {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.soc-link a i {
+    font-size: 25px;
+    cursor: pointer;
+    color: #034c7c;
+    margin-bottom: 20px;
+    transition: 0.4s;
+}
+
+.soc-link a i:hover {
+    color: #0383d8;
+}
+
+.div-img {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.div-img img {
+    width: 100%;
+    /* border-radius: 20%; */
+}
+
+/* animation */
+
+
+
+#about,
+#services,
+#contact {
+    padding: 50px;
+    border-top: 1px solid #e0e0e0;
+}
+
+#about h2,
+#services h2,
+#contact h2 {
+    color: #034c7c;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 2em;
+}
+
+#contact a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#services {
+    background-color: #0383d8;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    flex: 1 1 calc(50% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s;
+    font-size: 1.5em;
+    margin: 50px 30px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    margin-bottom: 30px;
+    color: #034c7c;
+    font-size: 1.5em;
+}
+
+.card p {
+    color: #4f4f4f;
+    font-size: 1em;
+    text-align: left;
+}
+
+.card i {
+    font-size: 50px;
+    color: #0383d8;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+    .div-text {
+        width: 50%;
+        text-align: center;
+    }
+
+    .container .hero {
+        height: 50vh;
+        width: 85%;
+    }
+
+    .container .hero {
+        width: 85%;
+        padding: 0 10px 0 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-links a {
+        margin-left: 3px;
+        font-size: 14px;
+    }
+
+    .content {
+        padding-right: 10px;
+    }
+
+    .div-text {
+        width: 40%;
+    }
+
+    .div-text h1 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .div-text h4 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .div-text p {
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+
+    .div-text .btn {
+        padding: 10px 10px;
+        border: 1px solid #034c7c;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+
+    .soc-link a i {
+        font-size: 15px;
+        margin-bottom: 10px;
+        transition: 0.4s;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+/* Centering the Experience card */
+.card:nth-child(3) {
+    margin: auto; /* This centers the third card horizontally */
+}
+
+footer {
+    background-color: #034c7c;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+}
+
+.footer-content {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 1200px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.footer-content p a {
+    color: #0383d8;
+    text-decoration: none;
+}
+
+.footer-content p a:hover {
+    text-decoration: underline;
+}
